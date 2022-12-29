@@ -17,6 +17,7 @@
             color: red;
         }
     </style>
+   
     <div class="mycontainer">
         <div class="w-25">
             <h3 style="text-align: center;">Log In</h3>
@@ -96,8 +97,8 @@
 
 
                                     <!-- Submit button -->
-                                    <asp:Button ID="btnSignUp" class="btn btn-primary btn-block mb-4" runat="server" Text="Sign up" ValidationGroup="signUpGroup" />
-
+                                    <asp:Button ID="btnSignUp" class="btn btn-primary btn-block mb-4" runat="server" Text="Sign up" ValidationGroup="signUpGroup" OnClick="btnSignUp_Click" />
+                                    <input type="reset" class="btn btn-primary btn-block mb-4" />
                                        <asp:RequiredFieldValidator ID='RequiredFieldValidator2' 
                         ValidationGroup='signUpGroup'  ControlToValidate='txtmail'
                                Text='Field Cannot Be Empty' Runat='Server' />

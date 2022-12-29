@@ -13,5 +13,10 @@ namespace ValidationTask
         {
 
         }
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                "swal('Good job!', 'You clicked Success button!', 'success')", true);
+        }
     }
 }
