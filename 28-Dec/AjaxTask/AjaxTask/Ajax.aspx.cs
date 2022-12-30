@@ -30,7 +30,7 @@ namespace AjaxTask
 
             //string table = "<table class='table table-striped'><tr><th>Comment</th></tr>";
 
-            SqlCommand sqlCommand = new SqlCommand("select * from Comment", connection);
+            SqlCommand sqlCommand = new SqlCommand("select * from Comment ORDER BY Com_ID", connection);
 
             SqlDataReader reader= sqlCommand.ExecuteReader();
 
